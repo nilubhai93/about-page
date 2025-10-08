@@ -230,7 +230,7 @@ body {
 
     .about-card h2 {
         font-size: 1.6rem;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .about-card h2::before {
@@ -322,7 +322,7 @@ body {
     }
 
     .about-card h2 {
-        font-size: 1.4rem;
+        font-size: 1.28rem;
         gap: 0.5rem;
     }
 
