@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-
 .hero {
     max-width: 1200px;
     margin: 4rem auto;
@@ -156,7 +155,6 @@ body {
     color: #546e7a;
 }
 
-
 .cta-button {
     display: inline-block;
     background: #1e88e5;
@@ -184,16 +182,223 @@ body {
     font-weight: 500;
 }
 
+/* Enhanced Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        margin: 3rem auto;
+    }
+
+    .content-section {
+        margin: 3rem auto;
+    }
+
+    .meaning-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero {
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
 
-    .nav-links {
-        gap: 1rem;
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-section {
+        margin: 2rem auto;
+        padding: 0 1.5rem;
     }
 
     .about-card {
         padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+    }
+
+    .about-card h2 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+    }
+
+    .about-card h2::before {
+        font-size: 2rem;
+    }
+
+    .about-card p {
+        font-size: 1rem;
+    }
+
+    .meaning-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .meaning-item {
+        padding: 1.2rem;
+    }
+
+    .meaning-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat-box {
+        padding: 1.5rem;
+    }
+
+    .stat-icon {
+        font-size: 2rem;
+    }
+
+    .stat-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 0.9rem 2rem;
+        font-size: 0.95rem;
+    }
+
+    .highlight-text {
+        font-size: 1rem;
+    }
+
+    /* Disable hover transforms on mobile */
+    .about-card:hover {
+        transform: none;
+    }
+
+    .meaning-item:hover {
+        transform: none;
+    }
+
+    .stat-box:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-section {
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .about-card h2 {
+        font-size: 1.4rem;
+        gap: 0.5rem;
+    }
+
+    .about-card h2::before {
+        font-size: 1.6rem;
+    }
+
+    .about-card p {
+        font-size: 0.95rem;
+    }
+
+    .meaning-grid {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .meaning-item {
+        padding: 1rem;
+    }
+
+    .meaning-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .meaning-item p {
+        font-size: 0.9rem;
+    }
+
+    .stats-grid {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .stat-box {
+        padding: 1.2rem;
+    }
+
+    .stat-icon {
+        font-size: 1.8rem;
+    }
+
+    .stat-box h3 {
+        font-size: 1.1rem;
+    }
+
+    .stat-box p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+        margin-top: 1.5rem;
+    }
+
+    .highlight-text {
+        font-size: 0.95rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-card {
+        padding: 1.2rem;
+    }
+
+    .about-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .meaning-item,
+    .stat-box {
+        padding: 1rem;
     }
 }
